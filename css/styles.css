@@ -161,6 +161,12 @@ span {
     font-weight: 500;
 
 }
+.contacts:hover,
+.contacts:focus {
+    color: var(--accent);
+
+ }
+
 
 .nav {
     color: var(--main-color);
@@ -171,19 +177,18 @@ span {
 }
 
 .nav-contact:hover {
-   color: #2196F3;
-}
-     
-.nav-contact:focus {
-    color: var(--accent);
-}
-.nav .active:active {
     color: #2196F3;
 }
 
-.nav:hover {
+.nav-contact:focus {
+    color: var(--accent);
+}
+
+
+nav:hover {
     color: #2196F3;
 }
+
 .nav:focus {
     color: var(--accent);
 
@@ -193,6 +198,47 @@ span {
 
 .contact {
     color: #757575;
+}
+
+.icon-letter {
+  
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.icon-letter::after {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-letter> .icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-image: url("../images/icon/envelope.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+
+
+}
+
+.icon-telefon {
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.icon-telefon>.icon-tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    background-image: url("../images/icon/smartphone.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3px;
 }
 
 
@@ -243,8 +289,22 @@ span {
    .button-baner {
        margin: auto;
        display: block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
    }  
 
+   .baner {
+
+       max-width: 1600px;
+       height: 600px;
+       margin-left: auto;
+       margin-right: auto;
+       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon.jpg");
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-color: #2F303A;
+   }
 
     
 
@@ -337,7 +397,37 @@ span {
    
 
 }
+.future-element::before {
+    display: block;
+    content: '';
+    height: 120px;
+    width: 270px;
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+    border-radius: 3px;
 
+}
+
+.icon-antena::before {
+    background-image: url("../images/icon/antenna.svg");   
+
+}
+
+
+.icon-time::before {
+    background-image: url("../images/icon/clock.svg");
+}
+
+.icon-plan::before {
+    background-image: url("../images/icon/diagram.svg");
+}
+
+.icon-ice::before {
+    background-image: url("../images/icon/astronaut.svg");
+
+}
 
 
 /* Team */
@@ -406,6 +496,76 @@ line-height: 1.19;
     background-color: #F5F4FA;
 }
 
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+.social-media-item:not(:last-child) {
+    margin-right: 10px;
+
+}
+.social-media-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+       
+svg {
+    fill: #AFB1B8;
+} 
+
+svg:hover,
+svg:focus {
+    fill: #2196F3;
+        }
+
+
+.team-element {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+
+/*Clients*/
+
+.clients-icon {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.clients-card {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border: 4px solid #AFB1B8;
+    border-radius: #AFB1B8;
+    color: #AFB1B8;
+}
+
+.clients-card:not(:last-child) {
+    margin-right: 30px;
+}
+.clients-card:hover,
+.clients-card:focus {
+    border: 4px solid var(--accent);
+}
+.client-icon:hover,
+.client-icon:focus {
+ 
+    border-radius: var(--accent);
+}
+    
+
 /* footer */
 
 .address-text {
@@ -469,9 +629,61 @@ line-height: 1.19;
     margin-bottom: 20px;
 
 }
+.footer-color {
+    display: flex;
+
+}
+.footer-conteiner {
+    display: flex;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.footer-icon {
+
+    margin-left: 50px;
+}
+
+.footer-media-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.social-media-footer {
+    display: inline-flex;
+
+}
+
+ .socials-media-footer {
+    margin-right: 10px;
+
+ }
+.footer-text-icon {
+ display: flex;
+ justify-content: start;
+ align-items: baseline;
+ font-weight: 700;
+ font-size: 14px;
+ line-height: 1.14;
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+ color: #ffffff;
+ margin-bottom: 14px;
+ margin-top: 14px;
+}
+.footer-icon {
+    color:#F5F4FA
+}
 
 
- 
+
 
 
 /* PORTFOLIO */
@@ -499,6 +711,8 @@ line-height: 1.19;
     border: 0px;
 
 }
+
+
 .nav-portfolio {
     color: var(--accent);
 }
@@ -506,11 +720,15 @@ line-height: 1.19;
 .button-filter:hover {
     background-color: var(--accent);
     color: var(--fon-second);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
 }
 .button-filter:focus {
     outline: solid 0px var(--accent) ;
     background-color: var(--secondary-color)
     color: var(--fon-second);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
     
 
 
@@ -562,6 +780,11 @@ line-height: 1.19;
    
 
 
+}
+.product-name:hover,
+.product-name:focus {
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .product-name:nth-child(3n) {
        margin-right: 0;
