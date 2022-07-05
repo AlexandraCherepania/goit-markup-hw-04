@@ -108,16 +108,18 @@ span {
 
 /* Nav */
 
-
-.carent {
+.logo {
+    margin-right: 93px;
+}
+.carrent {
     color: #2196F3;
 }
 
-
-
-
-.header {
+header {
     border-bottom: solid var(--accent);
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .main-nav {
@@ -137,41 +139,13 @@ span {
 .site-nav {
     display: flex;
 }
-
-.auth-nav {
-    display: flex;
-}
 .test-list {
     margin-right: 50px;
 }
 .test-list:last-child {
     margin-right: 0;
 }
-.nav-contact {
-    display: flex;
-}
 
-.nav-contact {
-    color: var(--secondary-color);
-     text-decoration-line: none;   
-}
-.contacts {
-    margin-right: 50px;
-}
-.contacts:last-child {
-    margin-right: 0;
-
-}
-.logo {
-    margin-right: 93px;
-}
-
-
-.contacts {
-    font-weight: 500;
-
-
-}
 .nav {
 
     font-size: 14px;
@@ -180,11 +154,38 @@ span {
     text-decoration-line: none;
 }
 
+.auth-nav {
+    display: flex;
+}
+.contacts {
+    font-weight: 500;
+    margin-right: 50px;
+}
+
+
+.contacts:last-child {
+    margin-right: 0;
+
+}
 .nav:hover,
 .nav:focus,
 .nav:active {
     color: #2196F3;
 }
+.nav-contact {
+    display: flex;
+}
+.nav-contact {
+    color: var(--secondary-color);
+     text-decoration-line: none; 
+     justify-content: center; 
+     align-items: center; 
+}
+
+
+
+
+
 
 .link-site .link {
     color: var(--main-color);
@@ -205,22 +206,23 @@ span {
     color: var(--accent);
 
  }
-.letter-icon {
+.headers-icon {
     margin-right: 10px;
 }
-
+.telefon-icon {
+    margin-right: 10px;
+}
 
 .nav-contact:focus,
 .nav-contact:hover {
     color: var(--accent);
 }
 
-
-
-.accentes:hover,
-.accentes:focus {
-     color: #2196F3;
+.icon-style:hover,
+.icon-style:focus {
+    color: #2196F3;
 }
+
 
 .nav:focus {
     color: var(--accent);
