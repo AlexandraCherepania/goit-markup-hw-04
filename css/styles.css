@@ -115,12 +115,8 @@ span {
     color: #2196F3;
 }
 
-header {
-    border-bottom: solid var(--accent);
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-}
+
+
 
 .main-nav {
     display: flex;
@@ -135,11 +131,15 @@ header {
     align-items: center;
     
 }
+.color {
+    color: #000000;
+}
 
 .site-nav {
     display: flex;
 }
 .test-list {
+    
     margin-right: 50px;
 }
 .test-list:last-child {
@@ -147,7 +147,7 @@ header {
 }
 
 .nav {
-
+    
     font-size: 14px;
     font-weight: 500;
     line-height: 1.17;
